@@ -1,7 +1,7 @@
 # E aí, tudo certo? 👋
 
 Tenho certeza que você vai curtir dar uma olhada no **HubFlix**! Eu seu, eu sei, qualquer semelhança é pura coincidência kkkkk.
-Pra conferir, é só **clicar nesse link aqui**: [Link do seu projeto]
+Pra conferir, é só **clicar nesse link aqui**: https://hubflix-sigma.vercel.app
 
 ---
 
@@ -12,18 +12,34 @@ Pra conferir, é só **clicar nesse link aqui**: [Link do seu projeto]
 **Pra fazer isso, é só seguir esses passos:**
 
 1.  **Clone o repositório:**
+
     ```bash
-    git clone [Link do seu repositório]
+    git clone git@github.com:luizeduardofs/hubflix.git
     ```
+
 2.  **Entre na pasta do projeto:**
+
     ```bash
-    cd [Nome da pasta do seu projeto]
+    cd hubflix # (Ou caso você tenha usado um nome diferente, lembre-se de colocar ele aqui)
     ```
+
 3.  **Instale as dependências com pnpm:**
+
     ```bash
     pnpm install
     ```
-4.  **Inicie o projeto:**
+
+4.  **API TOKEN:**
+    Você vai precisar gerar uma chave de api lá no site: https://developer.themoviedb.org/docs/getting-started
+
+    Após isso é só renomear o arquivo (.env.example) para (.env) e colocar sua chave
+    de api conforme indicado:
+
+    ```env
+    NEXT_PUBLIC_API_TOKEN='COLE SUA API KEY AQUI'
+    ```
+
+5.  **Inicie o projeto:**
     ```bash
     pnpm dev
     ```
